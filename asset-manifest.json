@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/birendranathmaity/polestar-demo/static/css/main.dc873b79.css",
+    "main.js": "/birendranathmaity/polestar-demo/static/js/main.601d10f7.js",
+    "index.html": "/birendranathmaity/polestar-demo/index.html",
+    "main.dc873b79.css.map": "/birendranathmaity/polestar-demo/static/css/main.dc873b79.css.map",
+    "main.601d10f7.js.map": "/birendranathmaity/polestar-demo/static/js/main.601d10f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc873b79.css",
+    "static/js/main.601d10f7.js"
+  ]
+}
