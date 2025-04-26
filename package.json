@@ -1,7 +1,7 @@
 {
   "name": "polestar-demo",
   "version": "1.0.0",
-  "homepage": "https://github.com/birendranathmaity/polestar-demo",
+  "homepage": "https://birendranathmaity.github.io/polestar-demo",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
