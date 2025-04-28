@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/polestar-demo/static/css/main.2461a476.css",
-    "main.js": "/polestar-demo/static/js/main.c72d84d9.js",
+    "main.css": "/polestar-demo/static/css/main.9fbacad7.css",
+    "main.js": "/polestar-demo/static/js/main.99715e55.js",
     "index.html": "/polestar-demo/index.html",
-    "main.2461a476.css.map": "/polestar-demo/static/css/main.2461a476.css.map",
-    "main.c72d84d9.js.map": "/polestar-demo/static/js/main.c72d84d9.js.map"
+    "main.9fbacad7.css.map": "/polestar-demo/static/css/main.9fbacad7.css.map",
+    "main.99715e55.js.map": "/polestar-demo/static/js/main.99715e55.js.map"
   },
   "entrypoints": [
-    "static/css/main.2461a476.css",
-    "static/js/main.c72d84d9.js"
+    "static/css/main.9fbacad7.css",
+    "static/js/main.99715e55.js"
   ]
 }
