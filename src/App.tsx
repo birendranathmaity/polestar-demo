@@ -33,6 +33,7 @@ const App: React.FC = () => {
             imageUrl: item.heroImage.url,
             description: item.heroSubtitle,
             buttons: item?.buttons || [],
+            url: item?.url,
           });
         }
       });
@@ -84,6 +85,7 @@ const App: React.FC = () => {
             imageUrl: string;
             description: string;
             buttons: any[];
+            url: string;
           },
           index: React.Key | null | undefined
         ) => (
@@ -93,6 +95,7 @@ const App: React.FC = () => {
             imageUrl={content.imageUrl}
             description={content.description}
             buttons={content?.buttons}
+            link={content?.url}
           />
         )
       )}

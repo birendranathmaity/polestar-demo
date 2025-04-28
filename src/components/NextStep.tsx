@@ -5,6 +5,7 @@ interface NextStepProps {
   description?: string;
   imageUrl?: string;
   buttons?: String[];
+  link: string;
 }
 
 const NextStep: React.FC<NextStepProps> = ({
@@ -12,6 +13,7 @@ const NextStep: React.FC<NextStepProps> = ({
   description,
   imageUrl,
   buttons,
+  link,
 }) => {
   return (
     <section
@@ -38,13 +40,14 @@ const NextStep: React.FC<NextStepProps> = ({
                   </span>
                 </h2>
                 <div className="style-562" />
-                {buttons?.map((btn: any) => {
+                {buttons?.map((btn: any,key) => {
                   return (
                     <a
                       data-testid="not-gatsby-link"
                       role="link"
                       className="style-563"
-                      href="/us/sign-up-newsletter/"
+                      href={link}
+                      key={key}
                     >
                       <span className="style-564">
                         <span className="style-565">{btn?.label}</span>

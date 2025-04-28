@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <section data-type="mega-menu" className="style-13">
@@ -5,7 +7,7 @@ const Header = () => {
         <div data-type="header" className="style-15">
           <div data-type="header-content" className="style-16">
             <header className="style-17">
-              <a href="/" className="style-18">
+            <Link to="/" className="style-18">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={101}
@@ -21,7 +23,7 @@ const Header = () => {
                     className="style-20"
                   />
                 </svg>
-              </a>
+                </Link>
               <div className="style-21">
                 <button
                   title="Open the menu"
@@ -91,10 +93,9 @@ const Header = () => {
                             </span>
                           </a>
                         </div>
-                        <a  href="/polestar2" data-type="link-wrapper" className="style-39">
+                        <Link to="/polestar2" className="style-39">
                           <span className="style-40">Polestar 2</span>
-                          
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <li data-group="main" className="style-46">

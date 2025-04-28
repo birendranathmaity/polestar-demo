@@ -13742,6 +13742,7 @@
     }
 
     .polestar2-795 {
+      display: none;
         margin-inline-start: 24px;
         position: absolute;
         z-index: 5;

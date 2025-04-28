@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 import App from "./App";
 import Polestar2 from "./pages/Polestar2";
 import Header from "./components/Header";
@@ -14,7 +14,7 @@ if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <React.StrictMode>
-      <Router>
+      <HashRouter>
         <div className="App">
           <div className="style-2">
             <div tabIndex={-1} className="style-3">
@@ -37,7 +37,7 @@ if (rootElement) {
             </div>
           </div>
         </div>
-      </Router>
+      </HashRouter>
     </React.StrictMode>
   );
 } else {

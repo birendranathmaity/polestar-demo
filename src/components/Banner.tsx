@@ -46,13 +46,14 @@ const Banner: React.FC<BannerProps> = ({
                 <div className="style-335">
                   <div className="style-336">
                     <div className="style-337">
-                      {buttons.map((btn: any) => {
+                      {buttons.map((btn: any,key) => {
                         return (
                           <a
                             data-testid="not-gatsby-link"
                             role="link"
                             className="style-347"
                             href={btn?.url}
+                            key={key}
                           >
                             <span className="style-348">
                               <span className="style-349">{btn?.label}</span>
