@@ -1,10 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./styles/App.css"; // Importing CSS styles
-import Header from "./components/Header";
-import Feature from "./components/Feature";
+import "./styles/Home.css"; // Importing CSS styles
 import NextStep from "./components/NextStep";
-import PeakPerformance from "./components/PeakPerformance";
-import Footer from "./components/Footer";
 import { GET_HOMEPAGE, graphqlRequest } from "./service";
 import Banner from "./components/Banner";
 import DataTrackArea from "./components/DataTrackArea";
@@ -54,72 +50,54 @@ const App: React.FC = () => {
     }
   }, []);
   return (
-    <div className="App">
-      <div className="style-2">
-        <div tabIndex={-1} className="style-3">
-          <div
-            aria-hidden="false"
-            data-version="112.10.0"
-            data-type="component-warehouse"
-            dir="ltr"
-            className="style-4"
-          >
-            <Header />
-            <main className="style-311">
-              <div className="style-312">
-                <div className="style-313">
-                  {banners.map(
-                    (
-                      feature: {
-                        title: string;
-                        imageUrl: string;
-                        description: string;
-                        color: string | undefined;
-                        buttons: any[];
-                      },
-                      index: React.Key | null | undefined
-                    ) => (
-                      <Banner
-                        key={index}
-                        title={feature.title}
-                        imageUrl={feature.imageUrl}
-                        description={feature.description}
-                        color={feature.color}
-                        buttons={feature?.buttons}
-                      />
-                    )
-                  )}
-                </div>
-
-                <DataTrackArea />
-                <Card />
-                {contents.map(
-                  (
-                    content: {
-                      title: string;
-                      imageUrl: string;
-                      description: string;
-                      buttons: any[];
-                    },
-                    index: React.Key | null | undefined
-                  ) => (
-                    <NextStep
-                      key={index}
-                      title={content.title}
-                      imageUrl={content.imageUrl}
-                      description={content.description}
-                      buttons={content?.buttons}
-                    />
-                  )
-                )}
-
-                <LongDescription />
-                <Footer />
-              </div>
-            </main>
-          </div>
-        </div>
+    <div className="style-312">
+      <div className="style-313">
+        {banners.map(
+          (
+            feature: {
+              title: string;
+              imageUrl: string;
+              description: string;
+              color: string | undefined;
+              buttons: any[];
+            },
+            index: React.Key | null | undefined
+          ) => (
+            <Banner
+              key={index}
+              title={feature.title}
+              imageUrl={feature.imageUrl}
+              description={feature.description}
+              color={feature.color}
+              buttons={feature?.buttons}
+            />
+          )
+        )}
       </div>
+
+      <DataTrackArea />
+      <Card />
+      {contents.map(
+        (
+          content: {
+            title: string;
+            imageUrl: string;
+            description: string;
+            buttons: any[];
+          },
+          index: React.Key | null | undefined
+        ) => (
+          <NextStep
+            key={index}
+            title={content.title}
+            imageUrl={content.imageUrl}
+            description={content.description}
+            buttons={content?.buttons}
+          />
+        )
+      )}
+
+      <LongDescription />
     </div>
   );
 };

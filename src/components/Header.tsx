@@ -1,11 +1,11 @@
 const Header = () => {
-    return (
-      <section data-type="mega-menu" className="style-13">
+  return (
+    <section data-type="mega-menu" className="style-13">
       <div data-type="navigation-container" className="style-14">
         <div data-type="header" className="style-15">
           <div data-type="header-content" className="style-16">
             <header className="style-17">
-              <a href="/us/" className="style-18">
+              <a href="/" className="style-18">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={101}
@@ -62,12 +62,16 @@ const Header = () => {
                 <div className="style-29">
                   <ul role="list" className="style-30">
                     <li data-group="main" className="style-31">
-                      <div data-type="primary-navigation-item" className="style-32">
+                      <div
+                        data-type="primary-navigation-item"
+                        className="style-32"
+                      >
                         <div className="style-33">
-                          <button
+                          <a
                             data-type="panel-button"
                             aria-expanded="false"
                             className="style-34"
+                            href="/polestar2"
                           >
                             <span className="style-35">Polestar 2</span>
                             <span aria-hidden="true" className="style-36">
@@ -85,44 +89,19 @@ const Header = () => {
                                 />
                               </svg>
                             </span>
-                          </button>
+                          </a>
                         </div>
-                        <div data-type="link-wrapper" className="style-39">
+                        <a  href="/polestar2" data-type="link-wrapper" className="style-39">
                           <span className="style-40">Polestar 2</span>
-                          <button
-                            data-type="touch-link"
-                            aria-expanded="false"
-                            aria-controls="mega-menu-:rr:-secondary-navigation-0"
-                            className="style-41"
-                          >
-                            <div className="style-42">Polestar 2 submenu</div>
-                          </button>
-                          <button
-                            data-type="chevron"
-                            aria-expanded="false"
-                            aria-controls="mega-menu-:rr:-secondary-navigation-0"
-                            aria-label="Polestar 2 submenu"
-                            className="style-43"
-                          >
-                            <svg
-                              width={8}
-                              height={8}
-                              viewBox="0 0 8 8"
-                              xmlns="http://www.w3.org/2000/svg"
-                              aria-hidden="true"
-                              className="style-44"
-                            >
-                              <path
-                                d="M1.52505 1.88391L4.00004 4.35891L6.47503 1.88391L7.35359 2.76246L4.00004 6.11602L0.646484 2.76246L1.52505 1.88391Z"
-                                className="style-45"
-                              />
-                            </svg>
-                          </button>
-                        </div>
+                          
+                        </a>
                       </div>
                     </li>
                     <li data-group="main" className="style-46">
-                      <div data-type="primary-navigation-item" className="style-47">
+                      <div
+                        data-type="primary-navigation-item"
+                        className="style-47"
+                      >
                         <div className="style-48">
                           <button
                             data-type="panel-button"
@@ -182,7 +161,10 @@ const Header = () => {
                       </div>
                     </li>
                     <li data-group="main" className="style-61">
-                      <div data-type="primary-navigation-item" className="style-62">
+                      <div
+                        data-type="primary-navigation-item"
+                        className="style-62"
+                      >
                         <div className="style-63">
                           <button
                             data-type="panel-button"
@@ -242,7 +224,10 @@ const Header = () => {
                       </div>
                     </li>
                     <li data-group="secondary" className="style-76">
-                      <div data-type="primary-navigation-item" className="style-77">
+                      <div
+                        data-type="primary-navigation-item"
+                        className="style-77"
+                      >
                         <div className="style-78">
                           <button
                             data-type="panel-button"
@@ -302,7 +287,10 @@ const Header = () => {
                       </div>
                     </li>
                     <li data-group="secondary" className="style-91">
-                      <div data-type="primary-navigation-item" className="style-92">
+                      <div
+                        data-type="primary-navigation-item"
+                        className="style-92"
+                      >
                         <div className="style-93">
                           <button
                             data-type="panel-button"
@@ -367,7 +355,10 @@ const Header = () => {
                         className="style-107"
                       >
                         <div className="style-108">
-                          <a href="/us/owning-a-polestar/" className="style-109">
+                          <a
+                            href="/us/owning-a-polestar/"
+                            className="style-109"
+                          >
                             <span className="style-110">Ownership</span>
                           </a>
                         </div>
@@ -1064,7 +1055,9 @@ const Header = () => {
                           className="style-265"
                         >
                           Additionals{" "}
-                          <span className="style-266">(Opens in a new window)</span>
+                          <span className="style-266">
+                            (Opens in a new window)
+                          </span>
                         </a>
                         <a
                           data-type="secondary-link"
@@ -1298,7 +1291,6 @@ const Header = () => {
       </div>
       <div data-type="sub-navigation" className="style-310" />
     </section>
-    
-    );
+  );
 };
 export default Header;
